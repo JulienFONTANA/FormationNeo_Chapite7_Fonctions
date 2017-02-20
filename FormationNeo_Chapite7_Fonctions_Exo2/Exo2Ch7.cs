@@ -31,8 +31,9 @@ namespace FormationNeo_Chapite7_Fonctions_Exo2
             // co-ordonnées iniiales en conséquences), puis rajouter des indices pour aider
             // l'utilisateur!
 
-            int heroCoordX = RandomCoordCalculator(0, 9); // nombre aléatoire entre 0 et 9
-            int heroCoordY = RandomCoordCalculator(0, 9);
+            var rnd = new Random();
+            int heroCoordX = rnd.Next(0, 9); // nombre aléatoire entre 0 et 9
+            int heroCoordY = rnd.Next(0, 9);
 
             // Ligne pour tester les co-ordonnées
             // Console.WriteLine("Debug en (" + heroCoordX + ", " + heroCoordY + ")");
@@ -53,12 +54,6 @@ namespace FormationNeo_Chapite7_Fonctions_Exo2
 
                 // Votre code ici!
             }
-        }
-
-        static int RandomCoordCalculator(int minCoord, int maxCoord)
-        {
-            var rnd = new Random();
-            return rnd.Next(minCoord, maxCoord);
         }
     }
 }

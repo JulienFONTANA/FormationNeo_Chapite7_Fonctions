@@ -8,32 +8,25 @@ using System.Threading.Tasks;
  * L'idée est de localiser un héros ou qu'il soit, sur terre ou dans la mer!
 */
 
-namespace FormationNeo_Chapite7_Fonctions_Exo2
+namespace FormationNeo_Chapite7_Fonctions_Bonus
 {
-    class Exo2Ch7Solution
+    class Exo2Ch7Bonus
     {
         static void Main(string[] args)
         {
-            // Nous allons imaginer qu'une grille de 10 casses par 10 représente la Terre
-            // Un héro est placé aléatoirement sur cette grille, ces co-ordonnées varient donc
-            // entre (0, 0) et (9, 9).
-            // La première co-ordonnée est sur l'axe Nord-Sud (0-9), la seconde sur l'axe Est-Ouest (0-9)
-            // Votre mission est de demander à l'utilisateur une série de co-ordonnées,
-            // puis de lui annoncer si le héro est plus au Nord, à l'Est, au Sud ou à l'Ouest.
-            // Quand une co-ordonnée est bonne, il faut aussi le lui annoncer.
-            // Quand l'utilisateur trouve les deux co-ordonnées, il faut lui annoncer qu'il à 
-            // trouvé un héro!
-            // Il serait possible de faire tout ce code en une seule fonction, dans la Main,
-            // mais utiliser des fonction quand cela vous semble pertinent! Attention à
-            // ne pas trop en faire non plus!!!
+            // Solution au Bonus de l'exercice 2 du chapitre 7
             //
             // Bonus : Modifier le code pour créer une grille de 100 par 100 (et modifier les
             // co-ordonnées iniiales en conséquences), puis rajouter des indices pour aider
             // l'utilisateur!
+            //
+            // Le but ici est d'observer l'efficacité des fonctions!
+            // Par exemple, l'ajout d'indices est très simple grâce à la fonction Radar,
+            // utilisée à plusieurs reprises et qui évite l'écriture de trop de code!
 
             var rnd = new Random();
-            int heroCoordX = rnd.Next(0, 9); // nombre aléatoire entre 0 et 9
-            int heroCoordY = rnd.Next(0, 9);
+            int heroCoordX = rnd.Next(0, 99); // nombre aléatoire entre 0 et 99
+            int heroCoordY = rnd.Next(0, 99);
 
             // Ligne pour tester les co-ordonnées
             //Console.WriteLine("Debug en (" + heroCoordX + ", " + heroCoordY + ")");
@@ -73,9 +66,15 @@ namespace FormationNeo_Chapite7_Fonctions_Exo2
             if (userX == heroX)
                 Console.WriteLine("Coordonnée Nord-Sud correcte");
             else if (userX > heroX)
-                Console.WriteLine("Plus au Nord!");
+            {
+                Console.Write("Plus au Nord! ");
+                Radar(userX, heroX); // Valeur la plus grande en premier
+            }
             else // (userX < heroX)
-                Console.WriteLine("Plus au Sud!");
+            {
+                Console.Write("Plus au Sud! ");
+                Radar(heroX, userX); // Valeur la plus grande en premier
+            }
         }
 
         static void TestYCoord(int userY, int heroY)
@@ -83,9 +82,32 @@ namespace FormationNeo_Chapite7_Fonctions_Exo2
             if (userY == heroY)
                 Console.WriteLine("Coordonnée Est-Ouest correcte");
             else if (userY > heroY)
-                Console.WriteLine("Plus a l'Est!");
+            {
+                Console.Write("Plus a l'Est! ");
+                Radar(userY, heroY); // Valeur la plus grande en premier
+            }
             else // (userY < heroY)
-                Console.WriteLine("Plus a l'Ouest!");
+            {
+                Console.Write("Plus a l'Ouest! ");
+                Radar(heroY, userY); // Valeur la plus grande en premier
+            }
+        }
+
+        static void Radar(int val1, int val2)
+        {
+            int ecart = val1 - val2; // valeur positive comprise entre 0 (valeurs identiques) et 99
+            if (ecart > 30)
+            {
+                Console.WriteLine("Le héro est sur un autre continent!");
+            }
+            else if (10 < ecart && ecart <= 30)
+            {
+                Console.WriteLine("Le héro est dans un autre pays!");
+            }
+            else
+            {
+                Console.WriteLine("Le héro est proche!");
+            }
         }
     }
 }
