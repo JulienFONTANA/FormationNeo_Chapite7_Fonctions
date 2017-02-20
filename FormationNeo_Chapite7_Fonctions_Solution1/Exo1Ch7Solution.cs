@@ -25,6 +25,7 @@ namespace FormationNeo_Chapite7_Fonctions_Exo1
         static void Main(string[] args)
         {
             // Ecrivez une fonction qui affiche "J'aime les poney tout doux." à l'écran
+            // qui ne renvoie rien et ne prends pas de paramètres
             ILovePoney();
 
             // Ecrivez une fonction qui affiche votre nom et votre age (vous pouvez mentir)

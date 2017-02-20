@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationNeo_Chapite7_Fonct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationNeo_Chapite7_Fonctions_Solution1", "FormationNeo_Chapite7_Fonctions_Solution1\FormationNeo_Chapite7_Fonctions_Solution1.csproj", "{317BDECF-C210-4801-8F2C-D875C486A239}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationNeo_Chapite7_Fonctions_Exo2", "FormationNeo_Chapite7_Fonctions_Exo2\FormationNeo_Chapite7_Fonctions_Exo2.csproj", "{90BE3BEF-56DB-46DE-9F41-C82EB13A9FA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationNeo_Chapite7_Fonctions_Solution2", "FormationNeo_Chapite7_Fonctions_Solution2\FormationNeo_Chapite7_Fonctions_Solution2.csproj", "{22BB2EA5-6E1F-4395-B01B-859D59C61401}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{317BDECF-C210-4801-8F2C-D875C486A239}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{317BDECF-C210-4801-8F2C-D875C486A239}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{317BDECF-C210-4801-8F2C-D875C486A239}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90BE3BEF-56DB-46DE-9F41-C82EB13A9FA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90BE3BEF-56DB-46DE-9F41-C82EB13A9FA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90BE3BEF-56DB-46DE-9F41-C82EB13A9FA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90BE3BEF-56DB-46DE-9F41-C82EB13A9FA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22BB2EA5-6E1F-4395-B01B-859D59C61401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22BB2EA5-6E1F-4395-B01B-859D59C61401}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22BB2EA5-6E1F-4395-B01B-859D59C61401}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22BB2EA5-6E1F-4395-B01B-859D59C61401}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -24,7 +24,8 @@ namespace FormationNeo_Chapite7_Fonctions_Exo1
     {
         static void Main(string[] args)
         {
-            // Ecrivez une fonction qui affiche "J'aime les poney tout doux." à l'écran
+            // Ecrivez une fonction qui affiche "J'aime les poney tout doux." à l'écran,
+            // qui ne renvoie rien et ne prends pas de paramètres
 
             // Ecrivez une fonction qui affiche votre nom et votre age (vous pouvez mentir)
             // sous la forme "Je m'appel {prénom} et j'ai {age} ans!"
