@@ -108,7 +108,7 @@ namespace FormationNeo_Chapite7_Fonctions
             // Les fonctions peuvent être contenu dans des structures de controles,
             // ou en contenir!
             resultat = 0;
-            for (int i = 0; i <= 10; i += 5)
+            for (int i = 0; i <= 10; i = i + 5)
             {
                 resultat = Addition(i, i, i);
                 Console.WriteLine(resultat);
