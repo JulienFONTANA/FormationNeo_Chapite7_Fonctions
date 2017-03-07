@@ -17,7 +17,7 @@ namespace FormationNeo_Chapite7_Fonctions_Bonus
             // l'utilisateur!
             //
             // Le but ici est d'observer l'efficacité des fonctions!
-            // Par exemple, l'ajout d'indices est très simple grâce à la fonction Radar,
+            // Par exemple, l'ajout d'indices est très simple grâce à la fonction Indice,
             // utilisée à plusieurs reprises et qui évite l'écriture de trop de code!
 
             var rnd = new Random();
@@ -25,7 +25,7 @@ namespace FormationNeo_Chapite7_Fonctions_Bonus
             int heroCoordY = rnd.Next(0, 99);
 
             // Ligne pour tester les co-ordonnées
-            //Console.WriteLine("Debug en (" + heroCoordX + ", " + heroCoordY + ")");
+            Console.WriteLine("Debug en (" + heroCoordX + ", " + heroCoordY + ")");
 
             int userCoordX = 0;
             int userCoordY = 0;
@@ -48,13 +48,18 @@ namespace FormationNeo_Chapite7_Fonctions_Bonus
                 }
                 else
                 {
-                    // Tests sur la première valeur (X)
-                    TestXCoord(userCoordX, heroCoordX);
-
-                    // Tests sur la seconde valeur (Y)
-                    TestYCoord(userCoordY, heroCoordY);
+                    Radar(userCoordX, userCoordY, heroCoordX, heroCoordY);
                 }
             }
+        }
+
+        static void Radar(int userCoordX, int userCoordY, int heroCoordX, int heroCoordY)
+        {
+            // Tests sur la première valeur (X)
+            TestXCoord(userCoordX, heroCoordX);
+
+            // Tests sur la seconde valeur (Y)
+            TestYCoord(userCoordY, heroCoordY);
         }
 
         static void TestXCoord(int userX, int heroX)
@@ -64,12 +69,12 @@ namespace FormationNeo_Chapite7_Fonctions_Bonus
             else if (userX > heroX)
             {
                 Console.Write("Plus au Nord! ");
-                Radar(userX, heroX); // Valeur la plus grande en premier
+                Indice(userX, heroX); // Valeur la plus grande en premier
             }
             else // (userX < heroX)
             {
                 Console.Write("Plus au Sud! ");
-                Radar(heroX, userX); // Valeur la plus grande en premier
+                Indice(heroX, userX); // Valeur la plus grande en premier
             }
         }
 
@@ -80,16 +85,16 @@ namespace FormationNeo_Chapite7_Fonctions_Bonus
             else if (userY > heroY)
             {
                 Console.Write("Plus a l'Est! ");
-                Radar(userY, heroY); // Valeur la plus grande en premier
+                Indice(userY, heroY); // Valeur la plus grande en premier
             }
             else // (userY < heroY)
             {
                 Console.Write("Plus a l'Ouest! ");
-                Radar(heroY, userY); // Valeur la plus grande en premier
+                Indice(heroY, userY); // Valeur la plus grande en premier
             }
         }
 
-        static void Radar(int val1, int val2)
+        static void Indice(int val1, int val2)
         {
             int ecart = val1 - val2; // valeur positive comprise entre 0 (valeurs identiques) et 99
             if (ecart > 30)

@@ -20,21 +20,32 @@ namespace FormationNeo_Chapite7_Fonctions_Exo1
     {
         static void Main(string[] args)
         {
+            string nom = "";
+            string age = "";
+
             // Ecrivez une fonction qui affiche "J'aime les poney tout doux." à l'écran
             // qui ne renvoie rien et ne prends pas de paramètres
+            // Appelez votre fonction ILovePoney()!
             ILovePoney();
 
             // Ecrivez une fonction qui affiche votre nom et votre age (vous pouvez mentir)
             // sous la forme "Je m'appel {prénom} et j'ai {age} ans!"
-            Presentation("Julien", 23);
+            // On utilisera un age sous la forme d'un string ici pour se simplifier la vie...
+            Console.WriteLine("Quel est votre nom ?");
+            nom = Console.ReadLine();
+            Console.WriteLine("Quel est votre age ?");
+            age = Console.ReadLine();
+
+            Presentation(nom, age);
 
             // Ecriver une fonction ayant le même nom que la fonction précédante mais 
             // qui n'affiche que votre nom (surcharger votre fonction)
-            Presentation("Julien");
+            Presentation(nom);
 
             // Ecrivez une fonction qui soustrait 2 double et qui renvoie le résultat
             // Astuce: pour initialiser un double, utiliser des chiffres à virgules
             //         exemple -> double a = 9.4;
+            // Ne mettez pas le "Console.WriteLine(...)" dans votre fonction!
             double a = 9.4;
             double b = 1.85;
             double resultat;
@@ -54,8 +65,9 @@ namespace FormationNeo_Chapite7_Fonctions_Exo1
 
             // Ecrivez une fonction qui prends un age en paramètre et détermine si vous êtes majeur
             // et qui renvoie cette information sous forme de booleen
-            int age = 21;
-            if (DeterminationMajeur(age)) // ici, on utilise directement le retour du booléen dans une structure de controle!
+            // Utiliser la variable ageInt (un int) et pas la variable age (un string)
+            int ageInt = 21;
+            if (DeterminationMajeur(ageInt)) // ici, on utilise directement le retour du booléen dans une structure de controle!
             {
                 Console.WriteLine("Vous êtes majeur");
             }
@@ -65,12 +77,14 @@ namespace FormationNeo_Chapite7_Fonctions_Exo1
             }
         }
 
+        // - - - SOLUTION - - - 
+
         static void ILovePoney()
         {
             Console.WriteLine("J'aime les poney tout doux.");
         }
 
-        static void Presentation(string nom, int age)
+        static void Presentation(string nom, string age)
         {
             Console.WriteLine("Je m'appel "+ nom +" et j'ai "+ age +" ans!");
         }

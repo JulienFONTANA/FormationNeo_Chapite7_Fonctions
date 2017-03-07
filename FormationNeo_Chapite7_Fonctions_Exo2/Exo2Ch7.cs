@@ -6,7 +6,7 @@
 
 namespace FormationNeo_Chapite7_Fonctions_Exo2
 {
-    class Exo2Ch7
+    class Exo2Ch7Solution
     {
         static void Main(string[] args)
         {
@@ -19,9 +19,8 @@ namespace FormationNeo_Chapite7_Fonctions_Exo2
             // Quand une co-ordonnée est bonne, il faut aussi le lui annoncer.
             // Quand l'utilisateur trouve les deux co-ordonnées, il faut lui annoncer qu'il à 
             // trouvé un héro!
-            // Il serait possible de faire tout ce code en une seule fonction, dans la Main,
-            // mais utiliser des fonction quand cela vous semble pertinent! Attention à
-            // ne pas trop en faire non plus!!!
+            //
+            // Compléter la fonction radar pour trouver le héro!
             //
             // Bonus : Modifier le code pour créer une grille de 100 par 100 (et modifier les
             // co-ordonnées iniiales en conséquences), puis rajouter des indices pour aider
@@ -32,7 +31,7 @@ namespace FormationNeo_Chapite7_Fonctions_Exo2
             int heroCoordY = rnd.Next(0, 9);
 
             // Ligne pour tester les co-ordonnées
-            // Console.WriteLine("Debug en (" + heroCoordX + ", " + heroCoordY + ")");
+            //Console.WriteLine("Debug en (" + heroCoordX + ", " + heroCoordY + ")");
 
             int userCoordX = 0;
             int userCoordY = 0;
@@ -48,8 +47,21 @@ namespace FormationNeo_Chapite7_Fonctions_Exo2
 
                 Console.WriteLine("Recherche en (" + userCoordX + ", " + userCoordY + ")");
 
-                // Votre code ici!
+                if ((userCoordX == heroCoordX) && (userCoordY == heroCoordY)) // Coordonnées exactes
+                {
+                    enRecherche = false; // On arrète la recherche, on a trouvé
+                    Console.WriteLine('\n' + "Héro correctement localisé.");
+                }
+                else
+                {
+                    Radar(userCoordX, userCoordY, heroCoordX, heroCoordY);
+                }
             }
+        }
+
+        static void Radar(int userCoordX, int userCoordY, int heroCoordX, int heroCoordY)
+        {
+            // votre code ici
         }
     }
 }

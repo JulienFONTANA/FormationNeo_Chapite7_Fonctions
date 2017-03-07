@@ -19,9 +19,8 @@ namespace FormationNeo_Chapite7_Fonctions_Exo2
             // Quand une co-ordonnée est bonne, il faut aussi le lui annoncer.
             // Quand l'utilisateur trouve les deux co-ordonnées, il faut lui annoncer qu'il à 
             // trouvé un héro!
-            // Il serait possible de faire tout ce code en une seule fonction, dans la Main,
-            // mais utiliser des fonction quand cela vous semble pertinent! Attention à
-            // ne pas trop en faire non plus!!!
+            //
+            // Compléter la fonction radar pour trouver le héro!
             //
             // Bonus : Modifier le code pour créer une grille de 100 par 100 (et modifier les
             // co-ordonnées iniiales en conséquences), puis rajouter des indices pour aider
@@ -55,13 +54,18 @@ namespace FormationNeo_Chapite7_Fonctions_Exo2
                 }
                 else
                 {
-                    // Tests sur la première valeur (X)
-                    TestXCoord(userCoordX, heroCoordX);
-
-                    // Tests sur la seconde valeur (Y)
-                    TestYCoord(userCoordY, heroCoordY);
+                    Radar(userCoordX, userCoordY, heroCoordX, heroCoordY);
                 }
             }
+        }
+
+        static void Radar(int userCoordX, int userCoordY, int heroCoordX, int heroCoordY)
+        {
+            // Tests sur la première valeur (X)
+            TestXCoord(userCoordX, heroCoordX);
+
+            // Tests sur la seconde valeur (Y)
+            TestYCoord(userCoordY, heroCoordY);
         }
 
         static void TestXCoord(int userX, int heroX)
