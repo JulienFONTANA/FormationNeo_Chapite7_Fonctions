@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 /* Il est temps de créer un système de localisation pour les héros.
  * L'idée est de localiser un héros ou qu'il soit, sur terre ou dans la mer!
