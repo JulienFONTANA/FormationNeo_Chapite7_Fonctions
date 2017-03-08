@@ -15,6 +15,8 @@ namespace FormationNeo_Chapite7_Fonctions_Solution1
              * La première partie de ces exercices seront des fonctions sans retours
              * Le but est ici de comprendre comment on peut se simplifier la vie avec
              * les fonctions!
+             * 
+             * Cet exercice vous demandde d'utiliser des fonctions, mais pas encore d'en écrire
             */
 
             // Ecrivons les tables de multiplications
@@ -67,11 +69,11 @@ namespace FormationNeo_Chapite7_Fonctions_Solution1
             // de la table des 3) et de l'inclure dans une fonction pour gagner encore plus de temps!
             // Utiliser la fonction "TableMultiplicationBoucle" pour la table des 8
             TableMultiplicationBoucle(8);
+
             // Cette fonction permet à notre code d'être modulaire. Si on veut afficher la
             // tables des 9, 10 ou 24, on peut, et si on veux afficher la table jusqu'à 12
             // ou 15 et non plus jusqu'à 10, une simple modification dans le code de la fonction
             // modifiera l'intégralité du comportement de ce programme!!!
-
             // Il est possible d'utilisez une fonction dans une boucle aussi!
             // utilisez une boucle pour  afficher les tables de multiplication de 9 à 12!
             // Ne faites qu'un seul appel à la fonction de Multiplication de votre choix
