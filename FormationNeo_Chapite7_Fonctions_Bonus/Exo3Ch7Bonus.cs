@@ -6,7 +6,7 @@
 
 namespace FormationNeo_Chapite7_Fonctions_Bonus
 {
-    class Exo2Ch7Bonus
+    class Exo3Ch7Bonus
     {
         static void Main(string[] args)
         {
@@ -34,7 +34,7 @@ namespace FormationNeo_Chapite7_Fonctions_Bonus
             Console.WriteLine("En recherche d'un héro... [LOADING]...");
             while (enRecherche)
             {
-                Console.WriteLine('\n' + "Coordonnée en X: ");
+                Console.WriteLine('\n' + "Coordonnée en X: "); 
                 int.TryParse(Console.ReadLine(), out userCoordX);
                 Console.WriteLine("Coordonnée en Y: ");
                 int.TryParse(Console.ReadLine(), out userCoordY);

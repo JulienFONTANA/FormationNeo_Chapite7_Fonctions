@@ -5,15 +5,15 @@ VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationNeo_Chapite7_Fonctions_Tuto", "FormationNeo_Chapite7_Fonctions\FormationNeo_Chapite7_Fonctions_Tuto.csproj", "{0141897D-F8B9-4F8C-B946-4C6B37B3083F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationNeo_Chapite7_Fonctions_Exo1", "FormationNeo_Chapite7_Fonctions_Exo1\FormationNeo_Chapite7_Fonctions_Exo1.csproj", "{093EC56C-5286-496E-A79B-575BFB47CFA8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationNeo_Chapite7_Fonctions_Exo2", "FormationNeo_Chapite7_Fonctions_Exo1\FormationNeo_Chapite7_Fonctions_Exo2.csproj", "{093EC56C-5286-496E-A79B-575BFB47CFA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationNeo_Chapite7_Fonctions_Solution1", "FormationNeo_Chapite7_Fonctions_Solution1\FormationNeo_Chapite7_Fonctions_Solution1.csproj", "{317BDECF-C210-4801-8F2C-D875C486A239}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationNeo_Chapite7_Fonctions_Solution2", "FormationNeo_Chapite7_Fonctions_Solution1\FormationNeo_Chapite7_Fonctions_Solution2.csproj", "{317BDECF-C210-4801-8F2C-D875C486A239}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationNeo_Chapite7_Fonctions_Exo2", "FormationNeo_Chapite7_Fonctions_Exo2\FormationNeo_Chapite7_Fonctions_Exo2.csproj", "{90BE3BEF-56DB-46DE-9F41-C82EB13A9FA7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationNeo_Chapite7_Fonctions_Exo3", "FormationNeo_Chapite7_Fonctions_Exo2\FormationNeo_Chapite7_Fonctions_Exo3.csproj", "{90BE3BEF-56DB-46DE-9F41-C82EB13A9FA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationNeo_Chapite7_Fonctions_Solution2", "FormationNeo_Chapite7_Fonctions_Solution2\FormationNeo_Chapite7_Fonctions_Solution2.csproj", "{22BB2EA5-6E1F-4395-B01B-859D59C61401}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationNeo_Chapite7_Fonctions_Solution3", "FormationNeo_Chapite7_Fonctions_Solution2\FormationNeo_Chapite7_Fonctions_Solution3.csproj", "{22BB2EA5-6E1F-4395-B01B-859D59C61401}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationNeo_Chapite7_Fonctions_Solution2Bonus", "FormationNeo_Chapite7_Fonctions_Bonus\FormationNeo_Chapite7_Fonctions_Solution2Bonus.csproj", "{657DC9AE-24F2-4A73-A4FF-63505F8FEA35}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormationNeo_Chapite7_Fonctions_Solution3Bonus", "FormationNeo_Chapite7_Fonctions_Bonus\FormationNeo_Chapite7_Fonctions_Solution3Bonus.csproj", "{657DC9AE-24F2-4A73-A4FF-63505F8FEA35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

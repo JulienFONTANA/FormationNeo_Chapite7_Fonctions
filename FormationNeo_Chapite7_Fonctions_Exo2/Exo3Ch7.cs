@@ -4,9 +4,9 @@
  * L'idée est de localiser un héros ou qu'il soit, sur terre ou dans la mer!
 */
 
-namespace FormationNeo_Chapite7_Fonctions_Exo2
+namespace FormationNeo_Chapite7_Fonctions_Exo3
 {
-    class Exo2Ch7Solution
+    class Exo3Ch7
     {
         static void Main(string[] args)
         {

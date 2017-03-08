@@ -14,9 +14,9 @@
 
 using System;
 
-namespace FormationNeo_Chapite7_Fonctions_Exo1
+namespace FormationNeo_Chapite7_Fonctions_Exo2
 {
-    class Exo1Ch7Solution
+    class Exo2Ch7Solution
     {
         static void Main(string[] args)
         {
