@@ -88,10 +88,10 @@ namespace FormationNeo_Chapite7_Fonctions_Solution1
             // un minimum de lignes 
             //
             // Solution:
-            //for (int index = 1; index <= 12; index++)
-            //{
-            //    TableMultiplicationBoucle(index);
-            //}
+            // for (int index = 1; index <= 12; index++)
+            // {
+            //     TableMultiplicationBoucle(index);
+            // }
         }
 
         static void TableMultiplication(int a)

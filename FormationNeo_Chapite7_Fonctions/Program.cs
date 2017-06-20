@@ -38,7 +38,7 @@ namespace FormationNeo_Chapite7_Fonctions
         static void Main(string[] args)
         {
             /* Nous allons commencer par des fonctions qui écrivent "Bonjour ..." à l'écran.
-             * Ou se situe le code de ces fonctions? Tout en bas de ce tutorial, sous la fonction Main
+             * Ou se situe le code de ces fonctions? Tout en bas de ce tutoriel, sous la fonction Main
              * Pour y accéder facilement, cliquer sur la petite case - à gauche de la fonction Main
              * 
              * Une autre solution est de cliquer sur le nom de la fonction qui vous intéresse, et

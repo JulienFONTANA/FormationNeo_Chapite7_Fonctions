@@ -82,12 +82,6 @@ namespace FormationNeo_Chapite7_Fonctions_Exo1
             // Comment est il possible de simplifier tout cet exercice en quelques lignes?
             // C'est à dire comment afficher les tables de multiplication de 1 à 12 en
             // un minimum de lignes 
-            //
-            // Solution:
-            //for (int index = 1; index <= 12; index++)
-            //{
-            //    TableMultiplicationBoucle(index);
-            //}
         }
 
         static void TableMultiplication(int a)

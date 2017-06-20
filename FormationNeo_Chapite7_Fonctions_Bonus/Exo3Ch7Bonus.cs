@@ -13,7 +13,7 @@ namespace FormationNeo_Chapite7_Fonctions_Bonus
             // Solution au Bonus de l'exercice 2 du chapitre 7
             //
             // Bonus : Modifier le code pour créer une grille de 100 par 100 (et modifier les
-            // co-ordonnées iniiales en conséquences), puis rajouter des indices pour aider
+            // coordonnées iniiales en conséquences), puis rajouter des indices pour aider
             // l'utilisateur!
             //
             // Le but ici est d'observer l'efficacité des fonctions!
@@ -24,7 +24,7 @@ namespace FormationNeo_Chapite7_Fonctions_Bonus
             int heroCoordX = rnd.Next(0, 99); // nombre aléatoire entre 0 et 99
             int heroCoordY = rnd.Next(0, 99);
 
-            // Ligne pour tester les co-ordonnées
+            // Ligne pour tester les coordonnées
             Console.WriteLine("Debug en (" + heroCoordX + ", " + heroCoordY + ")");
 
             int userCoordX = 0;

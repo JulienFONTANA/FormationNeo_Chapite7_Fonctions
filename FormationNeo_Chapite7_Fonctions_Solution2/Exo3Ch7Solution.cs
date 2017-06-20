@@ -4,33 +4,33 @@
  * L'idée est de localiser un héros ou qu'il soit, sur terre ou dans la mer!
 */
 
-namespace FormationNeo_Chapite7_Fonctions_Exo3
+namespace FormationNeo_Chapite7_Fonctions_Solution3
 {
     class Exo3Ch7Solution
     {
         static void Main(string[] args)
         {
             // Nous allons imaginer qu'une grille de 10 casses par 10 représente la Terre
-            // Un héro est placé aléatoirement sur cette grille, ces co-ordonnées varient donc
+            // Un héro est placé aléatoirement sur cette grille, ces coordonnées varient donc
             // entre (0, 0) et (9, 9).
-            // La première co-ordonnée est sur l'axe Nord-Sud (0-9), la seconde sur l'axe Est-Ouest (0-9)
-            // Votre mission est de demander à l'utilisateur une série de co-ordonnées,
+            // La première coordonnée est sur l'axe Nord-Sud (Nord = 0, Sud = 9), la seconde sur l'axe Est-Ouest (Est = 0, Ouest = 9)
+            // Votre mission est de demander à l'utilisateur une série de coordonnées,
             // puis de lui annoncer si le héro est plus au Nord, à l'Est, au Sud ou à l'Ouest.
-            // Quand une co-ordonnée est bonne, il faut aussi le lui annoncer.
-            // Quand l'utilisateur trouve les deux co-ordonnées, il faut lui annoncer qu'il à 
+            // Quand une coordonnée est bonne, il faut aussi le lui annoncer.
+            // Quand l'utilisateur trouve les deux coordonnées, il faut lui annoncer qu'il à 
             // trouvé un héro!
             //
             // Compléter la fonction radar pour trouver le héro!
             //
             // Bonus : Modifier le code pour créer une grille de 100 par 100 (et modifier les
-            // co-ordonnées iniiales en conséquences), puis rajouter des indices pour aider
+            // coordonnées iniiales en conséquences), puis rajouter des indices pour aider
             // l'utilisateur!
 
             var rnd = new Random();
             int heroCoordX = rnd.Next(0, 9); // nombre aléatoire entre 0 et 9
             int heroCoordY = rnd.Next(0, 9);
 
-            // Ligne pour tester les co-ordonnées
+            // Ligne pour tester les coordonnées
             //Console.WriteLine("Debug en (" + heroCoordX + ", " + heroCoordY + ")");
 
             int userCoordX = 0;

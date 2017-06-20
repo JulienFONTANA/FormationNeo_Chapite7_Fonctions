@@ -6,7 +6,7 @@
  *      --> La logique de Boole
  *      --> Les boucles
  * 
- * Commencer par choisir ce projet au démarrage. Pour ce faire, faites un clic droit sur "FormationNeo_Chapitre7_Fonction_Exo1",
+ * Commencer par choisir ce projet au démarrage. Pour ce faire, faites un clic droit sur "FormationNeo_Chapitre7_Fonctions_Solution2",
  * et cliquer sur l'icone de roue dentée "Définir comme projet de démarrage"
  * 
  * Utiliser Ctrl + F5 pour compiler et lancer le projet
@@ -14,7 +14,7 @@
 
 using System;
 
-namespace FormationNeo_Chapite7_Fonctions_Exo2
+namespace FormationNeo_Chapite7_Fonctions_Solution2
 {
     class Exo2Ch7Solution
     {
@@ -56,11 +56,12 @@ namespace FormationNeo_Chapite7_Fonctions_Exo2
             // Appellez cette fonction "Multiplication" 
             Console.WriteLine(Multiplication(3, 17));
 
-            // En utilisant votre fonction "Multiplication", écriver une fonction qui
-            // ne prend qu'un int en paramètre mais qui renvoie le carré de celui-çi!
+            // Ecriver une fonction qui ne prend qu'un int en paramètre mais qui
+            // utilise votre fonction "Multiplication" pour renvoier le carré de celui-çi!
             Console.WriteLine(Carre(12));
 
-            // Afficher toutes les valeurs des carrés des nombres entre 1 et 'n'
+            // Ecriver une fonction qui affiche toutes les valeurs
+            // des carrés des nombres entre 1 et une valeur passée en paramètre
             AfficheCarre(10);
 
             // Ecrivez une fonction qui prends un age en paramètre et détermine si vous êtes majeur
